@@ -11,6 +11,8 @@ I have tried to keep the code as simple as possible. I have also tried to explai
 - What is GetX?
   GetX is a Flutter library that helps you to use the Reactive Programming paradigm in your Flutter applications. It is a wrapper around the Flutter framework that allows you to use the Observer pattern in your applications. GetX is like a micro framework by itself. Apart of State management and Reactive Programming, it also provides a lot of other features.
   To learn more about GetX, visit the official website: https://pub.dev/packages/get
+  
+  <img src= "https://user-images.githubusercontent.com/7278348/225148811-f7743454-a59e-47b3-b925-0b9b92c1c693.gif" width="200" height="380">
 
   ## Getting Started
 
