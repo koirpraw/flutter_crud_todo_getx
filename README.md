@@ -1,6 +1,8 @@
 # flutter_crud_todo_getx
 ## A Todo App
 
+<img src= "https://user-images.githubusercontent.com/7278348/225148811-f7743454-a59e-47b3-b925-0b9b92c1c693.gif" width="200" height="380">
+
 This App illustrates CRUD operations using GetX package. It is a simple Todo App that allows you to create, read, update and delete tasks. In this example the tasks are not permanently stored in a database. Instead, they are stored in a list. The list is stored in the memory of the device. When the app is closed, the list is lost. This is just an example to show how to implement CRUD operations in Flutter using GetX. The purpose of this example is to simply undersand CRUD operations. In a real world application, you would use a database to store the data. I will be creating an exact copy of this app using a database in the future. Stay tuned!
 
 I have tried to keep the code as simple as possible. I have also tried to explain the code as much as possible. I hope you find this example useful.
@@ -12,7 +14,6 @@ I have tried to keep the code as simple as possible. I have also tried to explai
   GetX is a Flutter library that helps you to use the Reactive Programming paradigm in your Flutter applications. It is a wrapper around the Flutter framework that allows you to use the Observer pattern in your applications. GetX is like a micro framework by itself. Apart of State management and Reactive Programming, it also provides a lot of other features.
   To learn more about GetX, visit the official website: https://pub.dev/packages/get
   
-  <img src= "https://user-images.githubusercontent.com/7278348/225148811-f7743454-a59e-47b3-b925-0b9b92c1c693.gif" width="200" height="380">
 
   ## Getting Started
 
