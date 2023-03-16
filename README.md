@@ -26,10 +26,7 @@ I have tried to keep the code as simple as possible. I have also tried to explai
 
 ## packages/dependencies used:
 
-- [Flutter](https://flutter.dev/)
 - [GetX](https://pub.dev/packages/get/install)
-- [SQFLite](https://pub.dev/packages/sqflite/install)
-- [Path Provider](https://pub.dev/packages/path_provider)
 - [Lottie](https://pub.dev/packages/lottie)
 
 ## Credits:
