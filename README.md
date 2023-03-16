@@ -20,6 +20,9 @@ I have tried to keep the code as simple as possible. I have also tried to explai
   - add_todo_page.dart: This file contains the UI for the add task page. It allows the user to add a new task.
   - edit_todo_page.dart: This file contains the UI for the edit task page. It allows the user to edit an existing task.
 
+The entry point of the app is the HomePage. TodoHomePage starts with the empty list with a loop animation. Click a button to create new task. This takes you to a separate view/page, AddTodoPage. You can add a task here in the textform field and submit which takes you back to initial page with the new list of task. You can also edit the task by clicking on the edit button. This takes you to a separate view/page, EditTodoPage. You can edit the task here in the textform which takes you back to initial page with the updated list of task. You can delete the task by sliding the task card all the way to the left. This deletes the task and serves the updated list of task.
+All the functions to add , delete and update tasks reside in the task_controller.  
+
 ## Project ideation & Visualisation
 #### Wireframe
 ![Low-Fi Wireframe](assets/todo_lofi_mock.png)
