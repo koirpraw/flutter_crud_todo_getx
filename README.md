@@ -30,6 +30,7 @@ I have tried to keep the code as simple as possible. I have also tried to explai
 ![Low-Fi Wireframe](assets/todo_lofi_mock.png)
 #### App Architecture/Pattern(MVC)
 <img width="488" alt="mvc_flutter_todo" src="https://user-images.githubusercontent.com/7278348/225535808-e1fa0a08-45eb-4450-9f7a-a9030195431c.png">
+
 #### App Flow
 <img width="694" alt="app_flow_flutter_todo" src="https://user-images.githubusercontent.com/7278348/225536774-2ece3f19-388e-4fe6-aee7-1dfdc906ba69.png">
 
