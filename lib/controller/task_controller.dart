@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-
+import 'package:flutter/material.dart';
 import '../model/task.dart';
 
 class TaskController extends GetxController {
@@ -10,6 +10,8 @@ class TaskController extends GetxController {
   var title = ''.obs;
   var taskStatus = false.obs;
 
+  final TextEditingController titleController = TextEditingController();
+
   @override
   void onInit() {
     getAllTasks();
@@ -18,14 +20,7 @@ class TaskController extends GetxController {
 
   addTask(String title) {
     tasks.add(Task(title: title, isDone: false));
-    // update();
-    // getAllTasks();
   }
-
-  // addTask(Task myTask) {
-  //   tasks.add(myTask);
-  //   getAllTasks();
-  // }
 
   void removeTask(int index) {
     tasks.removeAt(index);
@@ -35,14 +30,11 @@ class TaskController extends GetxController {
 
   void updateTask(int index, String title) {
     tasks[index].title = title;
-    // update();
-    // getAllTasks();
     tasks.refresh();
   }
 
   void toggleTask(int index) {
     tasks[index].isDone = !tasks[index].isDone;
-    // getAllTasks();
     tasks.refresh();
     // update();
   }

@@ -6,7 +6,7 @@ import '../controller/task_controller.dart';
 class AddTodoPage extends StatelessWidget {
   static const id = '/add_page';
   final TaskController taskController = Get.put(TaskController());
-  final TextEditingController titleController = TextEditingController();
+  // final TextEditingController titleController = TextEditingController();
 
   AddTodoPage({Key? key}) : super(key: key);
 
@@ -41,7 +41,7 @@ class AddTodoPage extends StatelessWidget {
                   width: Get.width * 0.9,
                   child: TextFormField(
                     maxLines: 3,
-                    controller: titleController,
+                    controller: taskController.titleController,
                     decoration: InputDecoration(
                       labelText: 'Add Task',
                       border: OutlineInputBorder(
@@ -60,11 +60,11 @@ class AddTodoPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                taskController.addTask(titleController.text);
+                taskController.addTask(taskController.titleController.text);
                 Get.back();
                 Get.snackbar(
                   'title',
-                  '${titleController.text} added',
+                  '${taskController.titleController.text} added',
                   snackPosition: SnackPosition.TOP,
                 );
               },
@@ -76,20 +76,20 @@ class AddTodoPage extends StatelessWidget {
     );
   }
 
-  createTask() {
-    // taskController.addTask(titleController.text).then((value) {
-    //   Get.snackbar(
-    //     'title',
-    //     '${titleController.text} added',
-    //     snackPosition: SnackPosition.BOTTOM,
-    //   );
-    // });
-    taskController.addTask(titleController.text).then((value) {
-      Get.snackbar(
-        'title',
-        '${titleController.text} added',
-        snackPosition: SnackPosition.BOTTOM,
-      );
-    });
-  }
+  // createTask() {
+  //   // taskController.addTask(titleController.text).then((value) {
+  //   //   Get.snackbar(
+  //   //     'title',
+  //   //     '${titleController.text} added',
+  //   //     snackPosition: SnackPosition.BOTTOM,
+  //   //   );
+  //   // });
+  //   taskController.addTask(titleController.text).then((value) {
+  //     Get.snackbar(
+  //       'title',
+  //       '${titleController.text} added',
+  //       snackPosition: SnackPosition.BOTTOM,
+  //     );
+  //   });
+  // }
 }
