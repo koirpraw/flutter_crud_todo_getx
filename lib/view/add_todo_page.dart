@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../model/task.dart';
+
 import '../controller/task_controller.dart';
 
 class AddTodoPage extends StatelessWidget {

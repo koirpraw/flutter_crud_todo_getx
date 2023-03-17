@@ -18,27 +18,41 @@ class TaskController extends GetxController {
 
   addTask(String title) {
     tasks.add(Task(title: title, isDone: false));
-    getAllTasks();
+    // update();
+    // getAllTasks();
   }
+
+  // addTask(Task myTask) {
+  //   tasks.add(myTask);
+  //   getAllTasks();
+  // }
 
   void removeTask(int index) {
     tasks.removeAt(index);
-    getAllTasks();
+    // update();
+    // getAllTasks();
   }
 
   void updateTask(int index, String title) {
     tasks[index].title = title;
-    getAllTasks();
+    // update();
+    // getAllTasks();
+    tasks.refresh();
   }
 
   void toggleTask(int index) {
     tasks[index].isDone = !tasks[index].isDone;
-    getAllTasks();
+    // getAllTasks();
+    tasks.refresh();
+    // update();
   }
 
   getAllTasks() {
-    tasks.value =
-        tasks.map((element) => Task.fromJson(element.toJson())).toList().obs;
-    update();
+    // tasks.value =
+    //     tasks.map((element) => Task.fromJson(element.toJson())).toList().obs;
+    // update();
+    if (tasks.isNotEmpty) {
+      tasks.refresh();
+    }
   }
 }

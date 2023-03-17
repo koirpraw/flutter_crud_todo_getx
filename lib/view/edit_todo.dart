@@ -10,7 +10,7 @@ class TodoEdit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController textEditingController =
+    final TextEditingController editedTitleController =
         TextEditingController(text: taskController.tasks[index!].title);
     return Scaffold(
       appBar: AppBar(
@@ -65,7 +65,7 @@ class TodoEdit extends StatelessWidget {
                   keyboardType: TextInputType.multiline,
                   maxLines: 3,
                   autofocus: true,
-                  controller: textEditingController,
+                  controller: editedTitleController,
                 ),
               ),
             ],
@@ -85,7 +85,7 @@ class TodoEdit extends StatelessWidget {
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
-                  taskController.updateTask(index!, textEditingController.text);
+                  taskController.updateTask(index!, editedTitleController.text);
                   Get.back();
                   Get.snackbar(
                     'Updated',
